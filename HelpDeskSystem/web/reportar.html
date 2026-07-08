@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reportar Incidente</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Reporte de Incidentes</h1>
+</header>
+
+
+<nav>
+    <a href="index.html">Inicio</a> |
+    <a href="reportar.html">Reportar</a> |
+    <a href="tickets.html">Tickets</a>
+</nav>
+
+
+<main>
+
+<section>
+
+    <h2>Nuevo Ticket</h2>
+
+    <article>
+
+        <h3>Formulario de Registro</h3>
+
+
+        <form class="form-ticket">
+
+
+            <label for="titulo">
+                Título del incidente:
+            </label>
+
+            <input 
+                type="text" 
+                id="titulo" 
+                name="titulo"
+                placeholder="Ingrese el título del incidente">
+
+
+            <label for="categoria">
+                Categoría:
+            </label>
+
+            <select id="categoria" name="categoria">
+
+                <option value="Red">Red</option>
+                <option value="Hardware">Hardware</option>
+                <option value="Software">Software</option>
+
+            </select>
+
+
+
+            <label>
+                Prioridad:
+            </label>
+
+
+            <div class="prioridad">
+
+                <input 
+                    type="radio" 
+                    id="alta" 
+                    name="prioridad" 
+                    value="Alta">
+
+                <label for="alta">
+                    Alta
+                </label>
+
+
+                <input 
+                    type="radio" 
+                    id="media" 
+                    name="prioridad" 
+                    value="Media">
+
+                <label for="media">
+                    Media
+                </label>
+
+
+                <input 
+                    type="radio" 
+                    id="baja" 
+                    name="prioridad" 
+                    value="Baja">
+
+                <label for="baja">
+                    Baja
+                </label>
+
+            </div>
+
+
+
+            <label for="descripcion">
+                Descripción:
+            </label>
+
+
+            <textarea 
+                id="descripcion" 
+                name="descripcion"
+                rows="5"
+                placeholder="Describa el problema encontrado">
+            </textarea>
+
+
+
+            <button 
+                type="submit" 
+                class="btn-primary">
+
+                Enviar Ticket
+
+            </button>
+
+
+        </form>
+
+
+    </article>
+
+
+</section>
+
+
+</main>
+
+
+
+<footer>
+
+    <p>
+        Help Desk 2026
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>
