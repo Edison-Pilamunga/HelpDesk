@@ -24,7 +24,55 @@
 body{
 
     font-family:Arial, Helvetica, sans-serif;
-    background:var(--color-fondo);
+    background:var(--background);
     padding:30px;
 
+}
+.btn-primary{
+    background:var(--color-primario);
+    color:white;
+    padding:12px 20px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.btn-primary:hover{
+    background:#0b5ed7;
+}
+
+.btn-primary:focus{
+    outline:3px solid #93c5fd;
+}
+.btn-secondary{
+    background:var(--color-secundario);
+    color:white;
+    padding:12px 20px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.btn-secondary:hover{
+    background:#5c636a;
+}
+
+.btn-secondary:focus{
+    outline:3px solid #adb5bd;
+}
+.btn-danger{
+    background:var(--color-peligro);
+    color:white;
+    padding:12px 20px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.btn-danger:hover{
+    background:#bb2d3b;
+}
+
+.btn-danger:focus{
+    outline:3px solid #f5a3ab;
 }
