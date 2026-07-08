@@ -1,2 +1,10 @@
-# HelpDesk
- arquitectura lógica de un sistema de gestión técnica profesional, integrando estándares de modelado UML, aplicación de patrones de diseño y el uso de herramientas de control de versiones (GitHub/Gitflow).
+## Design System
+
+Este proyecto incorpora una biblioteca de componentes reutilizables desarrollada con CSS3, que incluye:
+
+- Botones (Primario, Secundario y Peligro)
+- Formularios
+- Tarjetas (Cards)
+- Badges de prioridad
+- Variables CSS
+- Diseño responsive
