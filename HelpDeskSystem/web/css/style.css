@@ -172,4 +172,241 @@ textarea:focus{
     background:var(--color-exito);
 
 }
+/* ==========================
+   ESTRUCTURA GENERAL
+========================== */
 
+header {
+    background: var(--color-primario);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: var(--radio);
+    margin-bottom: 20px;
+}
+
+
+nav {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    background: #343a40;
+    padding: 15px;
+    border-radius: var(--radio);
+
+    margin-bottom: 30px;
+
+}
+
+
+nav a {
+
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+
+nav a:hover {
+
+    text-decoration: underline;
+
+}
+
+
+/* Contenedor principal con Flexbox */
+
+main {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+section {
+
+    background: var(--color-blanco);
+    width: 100%;
+    max-width: 900px;
+
+    padding: 25px;
+
+    border-radius: var(--radio);
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+
+}
+
+
+
+/* ==========================
+   FORMULARIO REPORTAR
+========================== */
+
+
+.form-ticket {
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+
+}
+
+
+.prioridad {
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+
+
+.prioridad input {
+
+    width: auto;
+    margin: 0;
+
+}
+
+
+
+/* ==========================
+   TABLA DE TICKETS
+========================== */
+
+
+table {
+
+    width:100%;
+    border-collapse: collapse;
+    margin-top:20px;
+
+}
+
+
+th {
+
+    background: var(--color-primario);
+    color:white;
+    padding:12px;
+
+}
+
+
+td {
+
+    padding:12px;
+    border:1px solid #ddd;
+    text-align:center;
+
+}
+
+
+
+/* ==========================
+   FOOTER
+========================== */
+
+
+footer {
+
+    margin-top:30px;
+    background:#343a40;
+    color:white;
+    text-align:center;
+    padding:15px;
+
+    border-radius:var(--radio);
+
+}
+
+
+
+/* ==========================
+   MEDIA QUERIES
+========================== */
+
+
+/* Tablets */
+
+@media(max-width:768px){
+
+
+    body{
+
+        padding:15px;
+
+    }
+
+
+    nav{
+
+        flex-direction:column;
+
+    }
+
+
+    section{
+
+        padding:15px;
+
+    }
+
+
+    table{
+
+        font-size:14px;
+
+    }
+
+
+}
+
+
+/* Celulares */
+
+@media(max-width:480px){
+
+
+    header h1{
+
+        font-size:24px;
+
+    }
+
+
+    .prioridad{
+
+        flex-direction:column;
+        align-items:flex-start;
+
+    }
+
+
+    input,
+    select,
+    textarea,
+    button{
+
+        font-size:14px;
+
+    }
+
+
+    table{
+
+        display:block;
+        overflow-x:auto;
+
+    }
+
+
+}

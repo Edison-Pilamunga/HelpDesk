@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Help Desk - Inicio</title>
+    <title>Help Desk - Design System</title>
 
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
 <header>
@@ -21,7 +22,11 @@
 </nav>
 
 <main>
-     <section>
+
+    <!-- Botones -->
+    <section>
+
+        <h2>Botones</h2>
 
         <button class="btn-primary">Botón Primario</button>
 
@@ -31,38 +36,68 @@
 
     </section>
 
-<section>
+    <!-- Formularios -->
+    <section>
 
-    <h2>Bienvenido</h2>
+        <h2>Componentes de Formularios</h2>
 
-    <article>
-        <h3>Presentación del Sistema</h3>
-        <p>
-            Sistema de gestión de incidentes para infraestructura tecnológica.
-        </p>
-    </article>
+        <input type="text" placeholder="Ingrese el título del incidente">
 
-</section>
+        <select>
+            <option>Seleccione una categoría</option>
+            <option>Red</option>
+            <option>Hardware</option>
+            <option>Software</option>
+        </select>
 
-<section>
+        <textarea rows="5" placeholder="Descripción del incidente"></textarea>
 
-    <h2>Resumen General</h2>
+    </section>
 
-    <article>
-        <h3>Estadísticas de Tickets</h3>
-        <p>Tickets abiertos: 15</p>
-        <p>Tickets resueltos: 40</p>
-    </article>
+    <!-- Tarjeta -->
+    <section>
 
-</section>
+        <h2>Tarjeta de Información</h2>
+
+        <article class="card">
+
+            <h3>Resumen General</h3>
+
+            <p>Tickets abiertos: 15</p>
+
+            <p>Tickets resueltos: 40</p>
+
+            <p>Técnicos disponibles: 8</p>
+
+        </article>
+
+    </section>
+
+    <!-- Badges -->
+    <section>
+
+        <h2>Prioridad de Tickets</h2>
+
+        <span class="badge alta">Alta</span>
+
+        <span class="badge media">Media</span>
+
+        <span class="badge baja">Baja</span>
+
+    </section>
 
 </main>
 
 <footer>
-    <p>UNIVERSIDAD TÉCNICA DE MANABÍ</p>
-    <p>TECNOLOGÍAS DE LA INFORMACIÓN - 2026</p>
-    <p>ESTUDIANTE: EDISON PILAMUNGA</p>
+
+    <p>Universidad Técnica de Manabí</p>
+
+    <p>Carrera de Tecnologías de la Información</p>
+
+    <p>EDISON PILAMUNGA</p>
+
 </footer>
 
 </body>
+
 </html>

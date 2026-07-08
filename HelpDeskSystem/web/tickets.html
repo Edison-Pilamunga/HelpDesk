@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Tickets</title>
 
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
 <header>
@@ -22,55 +23,70 @@
 
 <main>
 
-<section>
+    <section>
 
-    <h2>Tickets Registrados</h2>
+        <h2>Tickets Registrados</h2>
 
-    <article>
+        <article class="card">
 
-        <h3>Listado General de Incidentes</h3>
+            <h3>Listado General de Incidentes</h3>
 
-        <table>
+            <table>
 
-            <tr>
-                <th>ID</th>
-                <th>Título</th>
-                <th>Categoría</th>
-                <th>Estado</th>
-            </tr>
+                <thead>
 
-            <tr>
-                <td>001</td>
-                <td>Fallo de red</td>
-                <td>Red</td>
-                <td>Abierto</td>
-            </tr>
+                    <tr>
+                        <th>ID</th>
+                        <th>Título</th>
+                        <th>Categoría</th>
+                        <th>Prioridad</th>
+                    </tr>
 
-            <tr>
-                <td>002</td>
-                <td>Servidor apagado</td>
-                <td>Hardware</td>
-                <td>En Proceso</td>
-            </tr>
+                </thead>
 
-            <tr>
-                <td>003</td>
-                <td>Error de aplicación</td>
-                <td>Software</td>
-                <td>Resuelto</td>
-            </tr>
+                <tbody>
 
-        </table>
+                    <tr>
+                        <td>001</td>
+                        <td>Fallo de red</td>
+                        <td>Red</td>
+                        <td><span class="badge alta">Alta</span></td>
+                    </tr>
 
-    </article>
+                    <tr>
+                        <td>002</td>
+                        <td>Servidor apagado</td>
+                        <td>Hardware</td>
+                        <td><span class="badge media">Media</span></td>
+                    </tr>
 
-</section>
+                    <tr>
+                        <td>003</td>
+                        <td>Error de aplicación</td>
+                        <td>Software</td>
+                        <td><span class="badge baja">Baja</span></td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </article>
+
+    </section>
 
 </main>
 
 <footer>
-    <p>Help Desk 2026</p>
+
+    <p>Universidad Técnica de Manabí</p>
+
+    <p>Carrera de Tecnologías de la Información</p>
+
+    <p>Sistema Help Desk - 2026</p>
+
 </footer>
 
 </body>
+
 </html>
