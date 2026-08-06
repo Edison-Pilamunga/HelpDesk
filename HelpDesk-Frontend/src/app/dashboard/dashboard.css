@@ -1,0 +1,50 @@
+.dashboard{
+
+    width:90%;
+    margin:30px auto;
+
+}
+
+.dashboard h2{
+
+    text-align:center;
+    color:#6f42c1;
+    margin-bottom:25px;
+
+}
+
+.contenedor{
+
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+    flex-wrap:wrap;
+
+}
+
+.card{
+
+    flex:1;
+    min-width:200px;
+    background:#ffffff;
+    padding:20px;
+    text-align:center;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,.2);
+
+}
+
+.card h3{
+
+    color:#6f42c1;
+    margin-bottom:15px;
+
+}
+
+.card p{
+
+    font-size:32px;
+    font-weight:bold;
+    color:#495057;
+
+}

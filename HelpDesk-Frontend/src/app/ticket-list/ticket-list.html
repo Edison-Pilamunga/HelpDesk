@@ -1,0 +1,45 @@
+<div class="contenedor">
+
+    <h2>Listado de Tickets</h2>
+
+    <table *ngIf="tickets.length > 0">
+
+        <thead>
+
+            <tr>
+
+                <th>ID</th>
+                <th>Título</th>
+                <th>Descripción</th>
+                <th>Categoría</th>
+                <th>Prioridad</th>
+                <th>Estado</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr *ngFor="let ticket of tickets">
+
+                <td>{{ ticket.id }}</td>
+                <td>{{ ticket.titulo }}</td>
+                <td>{{ ticket.descripcion }}</td>
+                <td>{{ ticket.categoria }}</td>
+                <td>{{ ticket.prioridad }}</td>
+                <td>{{ ticket.estado }}</td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+    <div *ngIf="tickets.length === 0">
+
+        No existen tickets registrados.
+
+    </div>
+
+</div>

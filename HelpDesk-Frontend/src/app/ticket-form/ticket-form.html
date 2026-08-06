@@ -1,0 +1,71 @@
+<div class="contenedor">
+
+    <h2>Registrar Incidente</h2>
+
+    <form (ngSubmit)="guardarTicket()">
+
+        <label>Título</label>
+
+        <input
+            type="text"
+            [(ngModel)]="ticket.titulo"
+            name="titulo"
+            required>
+
+        <label>Descripción</label>
+
+        <textarea
+            [(ngModel)]="ticket.descripcion"
+            name="descripcion"
+            required>
+        </textarea>
+
+        <label>Categoría</label>
+
+        <select
+            [(ngModel)]="ticket.categoria"
+            name="categoria"
+            required>
+
+            <option value="">Seleccione</option>
+            <option value="Hardware">Hardware</option>
+            <option value="Software">Software</option>
+            <option value="Red">Red</option>
+
+        </select>
+
+        <label>Prioridad</label>
+
+        <select
+            [(ngModel)]="ticket.prioridad"
+            name="prioridad"
+            required>
+
+            <option value="">Seleccione</option>
+            <option value="Alta">Alta</option>
+            <option value="Media">Media</option>
+            <option value="Baja">Baja</option>
+
+        </select>
+
+        <label>Estado</label>
+
+        <select
+            [(ngModel)]="ticket.estado"
+            name="estado">
+
+            <option value="Abierto">Abierto</option>
+            <option value="En Progreso">En Progreso</option>
+            <option value="Cerrado">Cerrado</option>
+
+        </select>
+
+        <button type="submit">
+
+            Guardar Ticket
+
+        </button>
+
+    </form>
+
+</div>
