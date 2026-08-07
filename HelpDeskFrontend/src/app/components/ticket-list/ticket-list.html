@@ -1,0 +1,35 @@
+<h2>Listado de Tickets</h2>
+
+<h3>Total: {{tickets.length}}</h3>
+
+
+<table border="1">
+
+<tr>
+<th>ID</th>
+<th>Título</th>
+<th>Descripción</th>
+<th>Categoría</th>
+<th>Prioridad</th>
+<th>Estado</th>
+</tr>
+
+
+<tr *ngFor="let ticket of tickets">
+
+<td>{{ticket.id}}</td>
+
+<td>{{ticket.titulo}}</td>
+
+<td>{{ticket.descripcion}}</td>
+
+<td>{{ticket.categoria}}</td>
+
+<td>{{ticket.prioridad}}</td>
+
+<td>{{ticket.estado}}</td>
+
+</tr>
+
+
+</table>
